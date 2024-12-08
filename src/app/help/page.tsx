@@ -39,12 +39,12 @@ const Help = () => {
                     </div>
                     <div className='px-7 lg:px-14'>
                         <span>Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</span><br /><br />
-                        <span>If you enter your PAN information at checkout, you'll be able to pay for your order with PayTM or a local credit or debit card.</span> <br /><br />
+                        <span>If you enter your PAN information at checkout, `{`you'll`} be able to pay for your order with PayTM or a local credit or debit card.</span> <br /><br />
                         <span>Apple Pay</span> <br /><br />
                     </div>
 
                     <div>
-                        <span><span className='underline font-semibold'>Nike Members</span> can store multiple debit or credit cards in their profile for faster checkout. If you're not already a Member,<br />  <span className='underline font-semibold'>join us</span> today.</span>
+                        <span><span className='underline font-semibold'>Nike Members</span> can store multiple debit or credit cards in their profile for faster checkout. If {`you're`} not already a Member,<br />  <span className='underline font-semibold'>join us</span> today.</span>
                     </div>
                     <div >
                         <button className="btn">JOIN US</button>
@@ -69,7 +69,7 @@ const Help = () => {
 
                             <div>
                                 <span className='font-semibold'>Can I pay for my order with multiple methods?</span><br />
-                                <span>No, payment for Nike orders can't be split between multiple payment methods.</span> <br /><br />
+                                <span>No, payment for Nike orders {`can't`} be split between multiple payment methods.</span> <br /><br />
                             </div>
 
                             <div>
@@ -78,8 +78,8 @@ const Help = () => {
                             </div>
 
                             <div>
-                                <span className='font-semibold'>Why don't I see Apple Pay as an option?</span><br />
-                                <span>To see Apple Pay as an option in the Nike App or on Nike.com, you'll need to use a compatible Apple device running the latest <br /> OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, you'll need to use <br /> Safari to use Apple Pay on Nike.com.</span> <br /><br />
+                                <span className='font-semibold'>Why {`don't`} I see Apple Pay as an option?</span><br />
+                                <span>To see Apple Pay as an option in the Nike App or on Nike.com, {`you'll`} need to use a compatible Apple device running the latest <br /> OS, be signed in to your iCloud account and have a supported card in your Wallet. Additionally, {`you'll`} need to use <br /> Safari to use Apple Pay on Nike.com.</span> <br /><br />
                             </div>
 
                             <div>
@@ -93,7 +93,7 @@ const Help = () => {
                             </div>
 
                             <div className='underline font-semibold px-9'>
-                                <span>WHAT ARE NIKE'S DELIVERY OPTIONS?</span> <br /><br />
+                                <span>WHAT ARE {`NIKE'S`} DELIVERY OPTIONS?</span> <br /><br />
                                 <span>HOW DO I GET FREE DELIVERY ON NIKE ORDERS?</span>
                             </div>
 

@@ -58,7 +58,7 @@ const Join = () => {
 
 
                     <div className='flex justify-center'>
-                        <p className='text-gray-600 text-center text-[13px] pl-1' >By Creating an Account, you agree to Nike's <span className='text-gray-500 underline'>Privacy Policy <br /> and Terms of Use.</span> </p>
+                        <p className='text-gray-600 text-center text-[13px] pl-1' >By Creating an Account, you agree to {`Nike's`} <span className='text-gray-500 underline'>Privacy Policy <br /> and Terms of Use.</span> </p>
 
                     </div>
 

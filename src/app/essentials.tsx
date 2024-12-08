@@ -95,12 +95,12 @@ const Essentials = () => {
 
 
             <div>
-            <span className='font-semibold pl-3'>Kids'</span> <br /> <br />
+            <span className='font-semibold pl-3'>{`Kids'`}</span> <br /> <br />
                  <ul className='ess-ul'>
                     <li>Infant & Toddler Shoes</li>
-                    <li>Kids' Shoes</li>
-                    <li>Kids' Jordan Shoes</li>
-                    <li>Kids' Basketball Shoes</li>
+                    <li>`{`Kids'`} Shoes</li>
+                    <li>`{`Kids'`} Jordan Shoes</li>
+                    <li>`{`Kids'`} Basketball Shoes</li>
                 </ul>
             </div>
 

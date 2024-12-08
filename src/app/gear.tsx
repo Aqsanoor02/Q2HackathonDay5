@@ -42,7 +42,7 @@ const Gear = () => {
            
           <div>
                 
-                <span className='text-sm text-gray-700 px-2 '>Men's Short-Sleeve </span> <br />
+                <span className='text-sm text-gray-700 px-2 '>{`Men's`} Short-Sleeve </span> <br />
                 <span className='text-sm text-gray-700 px-2 '>Running Top</span>
 
           </div>
@@ -127,7 +127,7 @@ const Gear = () => {
           
          <div>
                
-               <span className='text-sm text-gray-700 px-2 '>Women's Long-Sleeve </span> <br />
+               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Long-Sleeve </span> <br />
                <span className='text-sm text-gray-700 px-2 '>Running Top</span>
 
          </div>
@@ -158,7 +158,7 @@ const Gear = () => {
           
          <div>
                
-               <span className='text-sm text-gray-700 px-2 '>Women's Mid-Rise 7/8 Running </span> <br />
+               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Mid-Rise 7/8 Running </span> <br />
                <span className='text-sm text-gray-700 px-2 '>Leggings with Pockets</span>
 
          </div>

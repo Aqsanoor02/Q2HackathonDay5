@@ -43,7 +43,7 @@ const Card = () => {
                  
                 <div>
                       
-                      <span className='text-sm text-gray-700 px-2 '>Women's Shoes</span>
+                      <span className='text-sm text-gray-700 px-2 '>{`Women's`} Shoes</span>
                 </div>
 
         </div>
@@ -68,7 +68,7 @@ const Card = () => {
                  
                 <div>
                       
-                      <span className='text-sm text-gray-700 px-2 '>Men's Shoes</span>
+                      <span className='text-sm text-gray-700 px-2 '>{`Men's`} Shoes</span>
                 </div>
 
         </div>
@@ -93,7 +93,7 @@ const Card = () => {
                  
                 <div>
                       
-                      <span className='text-sm text-gray-700 px-2 '>Women's Shoes</span>
+                      <span className='text-sm text-gray-700 px-2 '>{`Women's`} Shoes</span>
                 </div>
 
         </div>
@@ -118,7 +118,7 @@ const Card = () => {
                  
                 <div>
                       
-                      <span className='text-sm text-gray-700 px-2 '>Men's Shoes</span>
+                      <span className='text-sm text-gray-700 px-2 '>{`Men's`} Shoes</span>
                 </div>
 
         </div>

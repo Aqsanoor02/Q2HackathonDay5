@@ -40,7 +40,7 @@ const SignIn = () => {
             </div>
 
             <div className='flex justify-center'>
-                <p className='text-gray-600 text-center text-[15px]' >By logging in, you agree to Nike's <span className='text-gray-500 underline'>Privacy Policy <br /> and Terms of Use.</span> </p>
+                <p className='text-gray-600 text-center text-[15px]' >By logging in, you agree to {`Nike's`} <span className='text-gray-500 underline'>Privacy Policy <br /> and Terms of Use.</span> </p>
 
             </div>
 
