@@ -50,10 +50,12 @@ const Essentials = () => {
 
         </div>
 
+        {/* =========================================================================== */}
 
-        <div className='flex justify-evenly  flex-wrap px-36 pb-20 items-center '>
 
-            <div>
+        <div className='flex justify-evenly  flex-wrap px-36 pb-20 items-center mx-auto'>
+
+            <div className='px-2 w-[260px] mb-12'>
                 <span className='font-semibold  pl-3'>Icons</span> <br /> <br />
                 <ul className='ess-ul'>
                     <li>Air Force 1</li>
@@ -65,14 +67,8 @@ const Essentials = () => {
 
             </div>
 
-
-
-
-
-
-
-            <div>
-                <span className='font-semibold  pl-3'>Shoes</span> <br /> <br />
+            <div className='px-2 w-[260px] mb-12'>
+                <span className='font-semibold  pl-4'>Shoes</span> <br /> <br />
                  <ul className='ess-ul '>
                     <li>All Shoes</li>
                     <li>Custom Shoes</li>
@@ -83,7 +79,7 @@ const Essentials = () => {
 
 
 
-            <div>
+            <div className='px-2 w-[260px] mb-12'>
             <span className='font-semibold  pl-3'>Clothing</span> <br /> <br />
                  <ul className='ess-ul'>
                     <li>All Clothing</li>
@@ -94,13 +90,13 @@ const Essentials = () => {
             </div>
 
 
-            <div>
-            <span className='font-semibold pl-3'>{`Kids'`}</span> <br /> <br />
+            <div className='px-2 w-[260px] mb-12'>
+            <span className='font-semibold pl-3'> {`Kids'`} </span> <br /> <br />
                  <ul className='ess-ul'>
                     <li>Infant & Toddler Shoes</li>
-                    <li>`{`Kids'`} Shoes</li>
-                    <li>`{`Kids'`} Jordan Shoes</li>
-                    <li>`{`Kids'`} Basketball Shoes</li>
+                    <li>{`Kids'`} Shoes</li>
+                    <li>{`Kids'`} Jordan Shoes</li>
+                    <li>{`Kids'`} Basketball Shoes</li>
                 </ul>
             </div>
 
