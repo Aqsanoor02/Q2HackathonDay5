@@ -4,7 +4,8 @@ import { IoLocationOutline } from "react-icons/io5"; // Importing location icon 
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-8 px-6">
+        <div className="max-w-screen-2xl mx-auto">
+             <footer className="bg-black text-white py-8 px-6">
             {/* Top Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-6 border-b border-gray-700 pb-8">
                 
@@ -74,5 +75,7 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        </div>
+       
     );
 }

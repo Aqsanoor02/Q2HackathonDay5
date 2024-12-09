@@ -13,10 +13,10 @@ import { AlignJustify } from "lucide-react"
 
 const Header = () => {
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto">
 
 {/* main div for upper header */}
-<div className="bg-gray-100 flex justify-between  px-10 md:8px lg:px-16 xl:px-20 items-center py-2">
+<div className="bg-gray-100 flex justify-between  px-10 md:8px lg:px-16 xl:px-20 items-center py-2 ">
 
 
     <div className="pic flex justify-center  "> 
