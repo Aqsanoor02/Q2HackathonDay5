@@ -16,7 +16,7 @@ const Header = () => {
     <div className="max-w-screen-2xl mx-auto">
 
 {/* main div for upper header */}
-<div className="bg-gray-100 flex justify-between  px-10 md:8px lg:px-16 xl:px-20 items-center py-2 ">
+<div className="bg-gray-100 flex justify-between  px-10  lg:px-16 xl:px-20 items-center py-2 ">
 
 
     <div className="pic flex justify-center  "> 
@@ -42,6 +42,17 @@ const Header = () => {
     <SheetHeader>
       
       <SheetDescription >
+
+      <ul className=" gap-x-5 text-lg text-black py-7">
+                <Link href={'/products'}><li>New & Featured</li> </Link>
+               <Link href={'/products'}>  <li>Men</li></Link>
+                <Link href={'/products'}><li>Women</li> </Link>
+                <Link href={'/products'}> <li>Kids</li></Link>
+                <Link href={'/products'}><li>Sale</li> </Link>
+                <Link href={'/products'}> <li>SNKRS</li></Link>
+            </ul>
+
+            <SheetTitle className="text-xl font-semibold ">More Options</SheetTitle>
      
 
      <ul className="res-ul text-black text-lg py-7">
@@ -86,12 +97,12 @@ const Header = () => {
         {/* tabs div======== */}
         <div className=" ul hidden lg:block">
             <ul className="flex gap-x-5 text-sm">
-                <li>New & Featured</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Kids</li>
-                <li>Sale</li>
-                <li>SNKRS</li>
+                <Link href={'/products'}><li>New & Featured</li> </Link>
+               <Link href={'/products'}>  <li>Men</li></Link>
+                <Link href={'/products'}><li>Women</li> </Link>
+                <Link href={'/products'}> <li>Kids</li></Link>
+                <Link href={'/products'}><li>Sale</li> </Link>
+                <Link href={'/products'}> <li>SNKRS</li></Link>
             </ul>
         </div>
 

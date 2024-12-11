@@ -53,9 +53,9 @@ const Essentials = () => {
         {/* =========================================================================== */}
 
 
-        <div className='flex justify-evenly  flex-wrap px-36 pb-20 items-center mx-auto'>
+        <div className='flex justify-evenly  flex-wrap  px-5 lg:px-36 pb-20 items-center mx-auto'>
 
-            <div className='px-2 w-[260px] mb-12'>
+            <div className='ess-i px-2 w-[260px] mb-12'>
                 <span className='font-semibold  pl-3'>Icons</span> <br /> <br />
                 <ul className='ess-ul'>
                     <li>Air Force 1</li>
@@ -67,7 +67,7 @@ const Essentials = () => {
 
             </div>
 
-            <div className='px-2 w-[260px] mb-12'>
+            <div className='ess-i px-2 w-[260px] mb-12'>
                 <span className='font-semibold  pl-4'>Shoes</span> <br /> <br />
                  <ul className='ess-ul '>
                     <li>All Shoes</li>
@@ -79,7 +79,7 @@ const Essentials = () => {
 
 
 
-            <div className='px-2 w-[260px] mb-12'>
+            <div className='ess-i px-2 w-[260px] mb-12'>
             <span className='font-semibold  pl-3'>Clothing</span> <br /> <br />
                  <ul className='ess-ul'>
                     <li>All Clothing</li>
@@ -90,7 +90,7 @@ const Essentials = () => {
             </div>
 
 
-            <div className='px-2 w-[260px] mb-12'>
+            <div className='ess-i px-2 w-[260px] mb-12'>
             <span className='font-semibold pl-3'> {`Kids'`} </span> <br /> <br />
                  <ul className='ess-ul'>
                     <li>Infant & Toddler Shoes</li>

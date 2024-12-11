@@ -100,11 +100,15 @@ body{
 }
 
 
+.product-ul li{
+  padding: 7px 0px;
+}
 
 
 
-
-
+.gender-inp{
+  transform: scale(1.4);
+}
 
 
 

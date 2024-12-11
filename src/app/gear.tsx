@@ -35,7 +35,7 @@ const Gear = () => {
                 width={280}
                 height={250}
                 />
-                 <div className='flex justify-between items-center px-2 pt-2  flex-wrap'>
+                 <div className='flex justify-between items-center px-2 pt-6 sm:pt-2  flex-wrap'>
                   
                    <div className='text-xs font-bold pr-2'>Nike Dri-FIT ADV TechKnit Ultra</div> 
                    <div className='text-sm'>₹ 3 895</div>
@@ -74,16 +74,16 @@ const Gear = () => {
                 height={250}
                 />
 
-                    <div className='flex justify-between items-center flex-wrap px-2 pt-2'>
+                    <div className='flex justify-between items-center flex-wrap px-2  pt-5 sm:pt-2'>
                   
-                  <div className='text-xs font-bold pr-2'>Nike Dri-FIT Challenger <span className='text-white sm:hidden'>ultraaaa</span></div> 
+                  <div className='text-xs font-bold pr-2 '>Nike Dri-FIT Challenger </div> 
 
                   <div className='text-sm'>₹ 3 895</div>
                </div>
           
          <div>
                
-               <span className='text-sm text-gray-700 px-2 '>{`Men's`} 18cm (approx.) 2</span> <br />
+               <span className='text-sm text-gray-700 px-2 '>{`Men's`} 18cm (approx.) <span className='pl-[10px] sm:pl-0'>2</span></span> <br />
                <span className='text-sm text-gray-700 px-2 '>-in-1 Versatile Shorts </span>
 
          </div>
@@ -128,7 +128,7 @@ const Gear = () => {
           
          <div>
                
-               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Long-Sleeve </span> <br />
+               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Long- <span className='pl-[9px] sm:pl-0'>Sleeve</span> </span> <br />
                <span className='text-sm text-gray-700 px-2 '>Running Top</span>
 
          </div>
@@ -159,8 +159,8 @@ const Gear = () => {
           
          <div>
                
-               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Mid-Rise 7/8 Running</span> <br />
-               <span className='text-sm text-gray-700 px-2 '>Leggings with Pockets</span>
+               <span className='text-sm text-gray-700 px-2 '>{`Women's`} Mid-Rise 7/8 <span className='pl-[9px] sm:pl-0'>Running</span>  </span> <br />
+               <span className='text-sm text-gray-700 px-2 '>Leggings with <span className='pl-[9px] sm:pl-0'>Pockets</span>  </span>
 
          </div>
 
