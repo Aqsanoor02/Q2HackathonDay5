@@ -11,7 +11,6 @@ import Essentials from "./essentials";
 export default function Home() {
   return (
     <main className="max-w-screen-2xl mx-auto">
-
       <Hero/>
       <Card/>
       <Running/>
