@@ -28,10 +28,10 @@ const Header = () => {
 
 
     <div className="ul right-side-header-tabs gap-x-3  text-sm  hidden  lg:block ">
-        <Link href={'/store'}> <span className="header-border text-black " >Find a Store </span> </Link>
-        <Link href={'/help'}> <span className="header-border text-black " >Help </span> </Link>
-        <Link href={'/join'}> <span className="header-border text-black " >Join Us </span> </Link>
-        <Link href={'/signUp'}> <span className="text-black p-4" >Sign In </span> </Link>
+        <Link href={'/store'}> <span className="header-border text-black hover:underline hover:decoration-red-600" >Find a Store </span> </Link>
+        <Link href={'/help'}> <span className="header-border text-black hover:underline hover:decoration-red-600 " >Help </span> </Link>
+        <Link href={'/join'}> <span className="header-border text-black hover:underline hover:decoration-red-600 " >Join Us </span> </Link>
+        <Link href={'/signUp'}> <span className="text-black p-4 hover:underline hover:decoration-red-600" >Sign In </span> </Link>
     </div>
 
 
@@ -131,23 +131,53 @@ const Header = () => {
             {/* input div ends  */}
 
             {/* heart svg */}
-        <div>
-        <svg className="hover:opacity-55" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_1_24)">
-        <path d="M22.794 9.75002C24.118 9.75002 25.362 10.266 26.298 11.201C27.2262 12.1309 27.7475 13.3911 27.7475 14.705C27.7475 16.0189 27.2262 17.2791 26.298 18.209L18 26.508L9.70096 18.209C8.77307 17.2791 8.25195 16.0192 8.25195 14.7055C8.25195 13.3919 8.77307 12.1319 9.70096 11.202C10.16 10.7403 10.706 10.3743 11.3075 10.125C11.909 9.87578 12.5539 9.74832 13.205 9.75002C14.529 9.75002 15.773 10.266 16.709 11.201L17.469 11.961L18 12.492L18.53 11.961L19.29 11.201C19.7492 10.7396 20.2953 10.3738 20.8967 10.1248C21.4982 9.87573 22.143 9.74835 22.794 9.75002Z" stroke="#111111" stroke-width="1.5"/>
-        </g>
-        <defs>
+            <div>
+  <Link href={'/cart'}>
+    <svg
+      className="hover:opacity-55"
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_1_24)">
+        <path
+          d="M12 30C13.1046 30 14 29.1046 14 28C14 26.8954 13.1046 26 12 26C10.8954 26 10 26.8954 10 28C10 29.1046 10.8954 30 12 30Z"
+          stroke="#111111"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M26 30C27.1046 30 28 29.1046 28 28C28 26.8954 27.1046 26 26 26C24.8954 26 24 26.8954 24 28C24 29.1046 24.8954 30 26 30Z"
+          stroke="#111111"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M4 6H8L10 20H28"
+          stroke="#111111"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10 20L28 20C28.5304 20 29.0391 19.7893 29.4142 19.4142C29.7893 19.0391 30 18.5304 30 18V6H8"
+          stroke="#111111"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
         <clipPath id="clip0_1_24">
-        <rect width="24" height="24" fill="white" transform="translate(6 6)"/>
+          <rect width="36" height="36" fill="white" />
         </clipPath>
-        </defs>
-        </svg>
-
-
-        </div>
+      </defs>
+    </svg>
+  </Link>
+</div>
 
         {/* bag svg */}
-        <div>
+        <Link href={'/products'}>
         <svg  className="hover:opacity-55" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_28)">
         <path d="M14.25 14.25V12C14.25 11.4033 14.4871 10.831 14.909 10.409C15.331 9.98705 15.9033 9.75 16.5 9.75H19.5C20.0967 9.75 20.669 9.98705 21.091 10.409C21.5129 10.831 21.75 11.4033 21.75 12C21.75 12.5967 21.5129 13.169 21.091 13.591C20.669 14.0129 20.0967 14.25 19.5 14.25H9.75V22.5C9.75 23.4946 10.1451 24.4484 10.8483 25.1517C11.5516 25.8549 12.5054 26.25 13.5 26.25H22.5C23.4946 26.25 24.4484 25.8549 25.1517 25.1517C25.8549 24.4484 26.25 23.4946 26.25 22.5V14.25H23.5" stroke="#111111" stroke-width="1.5"/>
@@ -159,7 +189,7 @@ const Header = () => {
         </defs>
         </svg>
 
-        </div>
+        </Link >
 
         </div>
 

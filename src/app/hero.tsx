@@ -7,8 +7,8 @@ const Hero = () => {
         
 
         <div className='text-center bg-gray-100 py-2'>
-            <p className='text-lg'>Hello Nike App</p>
-            <p className='text-gray-600'>Download the app to access everything Nike. <span className='text-black underline'>Get Your Great</span> </p>
+            <p className='text-lg font-bold'>Hello Nike App</p>
+            <p className='text-gray-600'>Download the app to access everything Nike. <span className='text-black underline cursor-pointer hover:text-red-600'>Get Your Great</span> </p>
         </div>
 
 {/* ===========hero section starts============== */}

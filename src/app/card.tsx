@@ -1,136 +1,65 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { Product } from "../../Types/products";
+import { client } from "@/sanity/lib/client";
+import { useClient } from "sanity";
+import { urlFor } from "@/sanity/lib/image";
+import { four } from "@/sanity/lib/queries";
 
 const Card = () => {
+  const [product, setProduct] = useState<Product[]>([]);
+
+  useEffect(() => {
+    async function fetchproduct() {
+      const fetchedProduct: Product[] = await client.fetch(four);
+      setProduct(fetchedProduct);
+    }
+    fetchproduct();
+  }, []);
+
+ 
+
   return (
-    <div >
-        <div className='flex justify-between mt-28 px-10 lg:px-16'>
-            <div>
-                <span className='text-lg font-semibold'>Best of Air Max</span>
-            </div>
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold mb-6 text-center">
+        Our Latest Product
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        {product.map((product) => (
+          <div
+            key={product._id}
+            className="border roundec-lg shadow-md p-4 hover:shadow-lg transition duration-200"
+          >
+            <p className="text-center bg-yellow-400 mb-1">{product.status}</p>
 
-            <div className='flex items-center justify-between'>
-                <span>shop</span>
-                <div className='p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800 mx-3'>
-                <ChevronLeft />
-                </div>
-                <div className='p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800'>
-                <ChevronRight />
-                </div>
-            </div>
-
-        </div>
-
-
-        <div className='flex justify-evenly flex-wrap gap-x-4 px-8 mt-10'>
-         
-        <div>
-             <div className='w-72 h-72 mb-6 overflow-hidden'>
-                <Image
-                className='hover:scale-105 duration-300'
-                src={'/shoes1.png'}
-                alt=''
-                width={300}
-                height={300}/> <br />
-     
-            </div>
-            <div className='flex justify-between items-center px-2 pt-2'>
-                  
-                        <div className='text-base'>Nike Air Max Pulse</div> 
-                         <div className='text'>₹ 13 995</div>
-             </div>
-                 
-                <div>
-                      
-                      <span className='text-sm text-gray-700 px-2 '>{`Women's`} Shoes</span>
-                </div>
-
-        </div>
-
-
-           
-        <div>
-             <div className='w-72 h-72 mb-6 overflow-hidden'>
-                <Image
-                className='hover:scale-105 duration-300'
-                src={'/shoes1.png'}
-                alt=''
-                width={300}
-                height={300}/> <br />
-     
-            </div>
-            <div className='flex justify-between items-center px-2 pt-2'>
-                  
-                        <div className='text-base'>Nike Air Max Pulse</div> 
-                         <div className='text'>₹ 13 995</div>
-             </div>
-                 
-                <div>
-                      
-                      <span className='text-sm text-gray-700 px-2 '>{`Men's`} Shoes</span>
-                </div>
-
-        </div>
-
-
-
-        <div>
-             <div className='w-72 h-72 mb-6 overflow-hidden'>
-                <Image
-                className='hover:scale-105 duration-300'
-                src={'/Image2.png'}
-                alt=''
-                width={300}
-                height={300}/> <br />
-     
-            </div>
-            <div className='flex justify-between items-center px-2 pt-2'>
-                  
-                        <div className='text-base'>Nike Air Max Pulse</div> 
-                         <div className='text'>₹ 16 996</div>
-             </div>
-                 
-                <div>
-                      
-                      <span className='text-sm text-gray-700 px-2 '>{`Women's`} Shoes</span>
-                </div>
-
-        </div>
-
-
-
-        <div>
-             <div className='w-72 h-72 mb-6 overflow-hidden'>
-                <Image
-                className='hover:scale-105 duration-300'
-                src={'/Image2.png'}
-                alt=''
-                width={300}
-                height={300}/> <br />
-     
-            </div>
-            <div className='flex justify-between px-2 pt-2'>
-                  
-                        <div className='text-base'>Nike Air Max Pulse</div> 
-                         <div className='text'>₹ 16 996</div>
-             </div>
-                 
-                <div>
-                      
-                      <span className='text-sm text-gray-700 px-2 '>{`Men's`} Shoes</span>
-                </div>
-
-        </div>
-           
-            
-
-            
-        </div>
-
+            {product.image && (
+              <Image
+                src={urlFor(product.image).url()}
+                alt="image"
+                width={200}
+                height={200}
+                className="w-full h-48 object-cover rounded-md"
+              />
+            )}
+            <h2 className="text-lg font-semibold mt-4">
+              {product.productName}
+            </h2>
+            <p className="text-gray-500 mt-2 text-right">
+              {product.price ? `$${product.price}` : "Price is not available"}
+            </p>
+            <p className="text-gray-500 mt-1  text-right">{product.category}</p>
+            <p className="text-right">{product.colors}</p>
+            <p className="mt-1 font-semibold">
+              Stocks : {product.inventory} pcs{" "}
+            </p>
+          </div>
+        ))}
+      </div>
 
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
